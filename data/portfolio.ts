@@ -8,7 +8,7 @@ export const profile = {
     phone: "+62 812 1991 5554",
     linkedin: "https://www.linkedin.com/in/timothy-vieri-chandra",
     github: "https://github.com/TimothyVieri",
-    photo: "/profile.jpg",
+    photo: "/Profile.jpg",
     resume: "/CV.pdf",
     bio: "Informatics graduate from Petra Christian University with hands-on experience building web and mobile products end to end — from database schema to the pixels users click on. Comfortable moving between Laravel, Next.js, and Flutter, and most at home on projects that mix real data with a map, a database, or both. Currently interning as a Website Developer while wrapping up a GIS-based thesis project.",
     tagline: "I build the systems behind the screen — and the screen itself.",
