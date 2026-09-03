@@ -7,7 +7,7 @@ export const profile = {
     email: "timothyvieric@gmail.com",
     phone: "+62 812 1991 5554",
     linkedin: "https://www.linkedin.com/in/timothy-vieri-chandra",
-    github: "https://github.com/TimothyVieri",
+    github: "https://github.com/TimothyVeCe",
     photo: "/Profile.jpg",
     resume: "/CV.pdf",
     bio: "Informatics graduate from Petra Christian University with hands-on experience building web and mobile products end to end — from database schema to the pixels users click on. Comfortable moving between Laravel, Next.js, and Flutter, and most at home on projects that mix real data with a map, a database, or both. Currently interning as a Website Developer while wrapping up a GIS-based thesis project.",
@@ -63,6 +63,15 @@ export const experience = [
     },
     {
         type: "org",
+        org: "IRGL 2024",
+        role: "Vice Coordinator of Sponsorship Division",
+        period: "Mar 2024 - Nov 2024",
+        points: [
+            "Supported and helped lead the sponsorship team in securing funding to help cover the event's expenses."
+        ],
+    },
+    {
+        type: "org",
         org: "HIMAINFRA 23/24",
         role: "Member, Creative Information",
         period: "Jul 2023 — Jul 2024",
@@ -83,6 +92,18 @@ export const education = [
         school: "Petra 2 Christian Senior High School",
         degree: "High School Diploma in Science",
         period: "Jul 2019 — Jul 2022",
+        detail: "Surabaya, East Java",
+    },
+    {
+        school: "Mawar Sharon Christian Junior High School",
+        degree: "Junior High School Diploma",
+        period: "Jun 2016 — Jun 2019",
+        detail: "Surabaya, East Java",
+    },
+    {
+        school: "Mawar Sharon Christian Elementary School",
+        degree: "Elementary School Diploma",
+        period: "Jun 2010 — Jun 2016",
         detail: "Surabaya, East Java",
     },
 ];
