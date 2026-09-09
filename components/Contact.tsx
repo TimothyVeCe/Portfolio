@@ -1,11 +1,13 @@
 import { profile } from "@/data/portfolio";
 
+const whatsappNumber = profile.phone.replace(/[^\d]/g, "");
+
 const links = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   {
     label: "Phone",
-    value: profile.phone,
-    href: `tel:${profile.phone.replace(/\s/g, "")}`,
+    value: "+" + profile.phone,
+    href: `https://wa.me/${whatsappNumber}`,
   },
   { label: "LinkedIn", value: "timothy-vieri-chandra", href: profile.linkedin },
   { label: "GitHub", value: "TimothyVieri", href: profile.github },

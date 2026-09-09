@@ -5,7 +5,7 @@ export const profile = {
     location: "Surabaya, Indonesia",
     coordinates: "-7.2575° S, 112.7521° E",
     email: "timothyvieric@gmail.com",
-    phone: "+62 812 1991 5554",
+    phone: "6281219915554",
     linkedin: "https://www.linkedin.com/in/timothy-vieri-chandra",
     github: "https://github.com/TimothyVeCe",
     photo: "/Profile.jpg",
