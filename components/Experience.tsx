@@ -8,7 +8,8 @@ function ExperienceList({ items }: { items: ExperienceItem[] }) {
       {items.map((item, index) => (
         <li
           key={item.org + item.role}
-          className="grid grid-cols-[auto_1fr] gap-6 border-t border-line py-8 first:border-t-0 sm:grid-cols-[160px_auto_1fr] sm:gap-8"
+          className="animate-fade-up grid grid-cols-[auto_1fr] gap-6 border-t border-line py-8 first:border-t-0 sm:grid-cols-[160px_auto_1fr] sm:gap-8"
+          style={{ animationDelay: `${index * 90}ms` }}
         >
           <p className="hidden font-label text-[13px] text-ink-soft sm:block">
             {item.period}
@@ -16,9 +17,8 @@ function ExperienceList({ items }: { items: ExperienceItem[] }) {
 
           <div className="relative flex justify-center">
             <span
-              className={`mt-1.5 h-2.5 w-2.5 rounded-full ${
-                item.type === "work" ? "bg-signal" : "bg-map-blue-soft"
-              }`}
+              className={`mt-1.5 h-2.5 w-2.5 rounded-full ${item.type === "work" ? "bg-signal" : "bg-map-blue-soft"
+                }`}
             />
             {index !== items.length - 1 && (
               <span className="absolute top-4 h-full w-px bg-line" />
@@ -58,15 +58,15 @@ export default function Experience() {
   const org = experience.filter((item) => item.type === "org");
 
   return (
-    <section id="experience" className="border-b border-line">
+    <section className="border-b border-line">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-10 sm:py-28">
-        <h2 className="font-display text-3xl text-ink sm:text-4xl">
+        <h2 className="animate-fade-up font-display text-3xl text-ink sm:text-4xl">
           Experience
         </h2>
 
         {work.length > 0 && (
           <div>
-            <p className="mt-10 font-label text-[13px] text-signal">
+            <p className="animate-fade-up mt-10 font-label text-[13px] text-signal">
               Work & Internship
             </p>
             <ExperienceList items={work} />
@@ -75,7 +75,7 @@ export default function Experience() {
 
         {org.length > 0 && (
           <div>
-            <p className="mt-4 font-label text-[13px] text-signal">
+            <p className="animate-fade-up mt-4 font-label text-[13px] text-signal">
               Organization Experience
             </p>
             <ExperienceList items={org} />
